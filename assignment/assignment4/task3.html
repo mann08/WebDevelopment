@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <h3>Registration Form</h3>
+      <label><b>First Name:</b></label>
+      <input
+        type="text"
+        id="Firstname"
+        name="Firstname"
+        value="Enter First Name"
+      />
+      <br />
+      <br />
+      <label><b>Last Name:</b></label>
+      <input
+        type="text"
+        id="Lastname"
+        name="Lastname"
+        value="Enter Last Name"
+      />
+      <br />
+      <br />
+      <label><b>Email:</b></label>
+      <input type="text" id="Email" name="Email" value="Enter Email" />
+      <br />
+      <br />
+      <label><b>Password:</b></label>
+      <input type="password" id="Password" name="Password" />
+      <br />
+      <br />
+      <label><b>Gender:</b></label>
+      <br />
+      <label>
+        Male
+        <input type="radio" id="Male" name="Gender" />
+        <br />
+        Female
+        <input type="radio" id="Female" name="Gender" />
+        <br />
+        Other
+        <input type="radio" id="Other" name="Gender" />
+      </label>
+      <br />
+      <br />
+      <label><b>Age:</b></label>
+      <select name="Age" id="Age">
+        <option value="">Select Age</option>
+        <option value="18-25">18-25</option>
+        <option value="26-35">26-35</option>
+        <option value="36-45">36-45</option>
+        <option value="46-55">46-55</option>
+        <option value="56+">56+</option>
+      </select>
+      <br />
+      <br />
+      <label><b>Preferences:</b></label>
+      <br>
+      <label>Acrylic Painting</label>
+      <input type="checkbox" id="Acrylic Painting" name="Acrylic Painting" value="Acrylic Painting"/>
+      <br>
+      <label > Oil Painting</label>
+        <input type="checkbox" id="Oil Painting" name="Oil Painting" value="Oil Painting"/>
+      <br />
+        <label > Water Color Painting</label>
+            <input type="checkbox" id="Water Color Painting" name="Water Color Painting" value="Water Color Painting"/>
+      <br />
+      <br>
+      <label>Select Occupation:</label>
+      <select name="Select Occupation" id="Occupation">
+        <option value="">Select Occupation</option>
+        <option value="Artist">Artist</option>
+        <option value="Designer">Designer</option>
+        <option value="Teacher">Teacher</option>
+        <option value="Student">Student</option>
+      </select>
+      <br>
+      <br>
+         <label><b>BIO:</b></label>
+         
+      <textarea name="TestArea" id="TestArea" placeholder="Share few words about yourself..."></textarea>
+      <br>
+
+      <input type="reset" value="Reset" />
+      <input type="submit" value="SUBMIT" />
+    </form>
+  </body>
+</html>
