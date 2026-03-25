@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <h3>User Input Form</h3>
+      <fieldset>
+        <legend>Personal Particular</legend>
+        <label>Name:</label>
+        <input type="text" id="Name" name="Name" />
+        <br /><br />
+        <label>Password:</label>
+        <input type="password" id="Password" name="Password" />
+        <br /><br />
+        <label>Gender:</label>
+        <br />
+        <input type="radio" id="Male" name="Gender" value="Male" />
+        <label>Male</label>
+        <input type="radio" id="Female" name="Gender" value="Female" />
+        <label>Female</label>
+        <br /><br />
+        <label>Age:</label>
+        <select name="Age" id="Age">
+          <option value="">< 1 year old</option>
+          <option value="18-25">18-25</option>
+          <option value="26-35">26-35</option>
+          <option value="36-45">36-45</option>
+          <option value="46+">46+</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <legend>Language</legend>
+        <input type="checkbox" id="Java" name="Language" value="Java" />
+        <label>Java</label>
+        <input type="checkbox" id="C++" name="Language" value="C++" />
+        <label>C++</label>
+        <input type="checkbox" id="C#" name="Language" value="C#" />
+        <label>C#</label>
+      </fieldset>
+      <fieldset>
+        <legend>Instruction</legend>
+        <textarea>Enter your instructions here...</textarea>
+      </fieldset>
+      <br />
+      <input type="submit" value="SEND" />
+      <input type="reset" value="CLEAR" />
+    </form>
+  </body>
+</html>

@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <h4>Registration Form : Dance Club</h4>
+      <hr />
+      <table border="" cellpadding="3">
+        <tr>
+          <td>Name:</td>
+          <td><input type="text" id="Name" name="Name" /></td>
+        </tr>
+        <tr>
+          <td>IC No:</td>
+          <td><input type="text" id="ICNo" name="ICNo" /></td>
+        </tr>
+        <tr>
+          <td>Address:</td>
+          <td><textarea name="Address" id="Address"></textarea></td>
+        </tr>
+        <tr>
+          <td>Gender:</td>
+          <td>
+            <input type="radio" id="Male" name="Gender" />
+            <label>Male</label>
+            <input type="radio" id="Female" name="Gender" />
+            <label>Female</label>
+          </td>
+        </tr>
+        <tr>
+          <td>Dance Type:</td>
+          <td>
+            <input type="checkbox" id="Zapin" name="DanceType" />
+            <label>Zapin</label>
+            <input type="checkbox" id="Joget" name="DanceType" />
+            <label>Joget</label>
+            <input type="checkbox" id="Inang" name="DanceType" />
+            <label>Inang</label>
+            <input type="checkbox" id="Lion Dance" name="DanceType" />
+            <label>Lion Dance</label>
+          </td>
+        </tr>
+        <tr>
+          <td>Competition:</td>
+          <td>
+            <select name="Competition" id="Competition">
+              <option value="--None--">--None--</option>
+              <option value="State Level">Local Level</option>
+              <option value="National Level">National Level</option>
+              <option value="International Level">International Level</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Nationality:</td>
+          <td>
+            <select name="Nationality" id="Nationality">
+              <option value="-please select-">-please select-</option>
+              <option value="Indian">Indian</option>
+              <option value="Malaysian">Malaysian</option>
+              <option value="Indonesian">Indonesian</option>
+              <option value="Singaporean">Singaporean</option>
+              <option value="Thai">Thai</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Password:</td>
+          <td><input type="password" id="Password" name="Password" /></td>
+        </tr>
+      </table>
+
+      <input type="button" value="Register Me" />
+      <input type="button" value="Cancel" />
+    </form>
+  </body>
+</html>
