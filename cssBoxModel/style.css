@@ -1,0 +1,15 @@
+#outerdiv{
+     border: 2px solid black;
+     width: 600px;
+     height: 600px;
+     display: flex;
+     justify-content: space-evenly;
+     align-items: center;
+}
+.innerdiv{
+    border: 1px solid;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    background-color: lightgreen;
+}

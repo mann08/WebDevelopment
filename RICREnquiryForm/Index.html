@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header id="Navbar">
+      <img src="./logo.jpeg" alt="Logo" class="logo" width="200" height="50" />
+
+      <div class="NavLinks" id="nav">
+        <span>Home</span>
+        <span>About</span>
+        <span>Courses</span>
+        <span>IDE</span>
+        <span>Contact Us</span>
+      </div>
+
+      <div class="NavLinks" id="call">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="currentColor"
+          class="bi bi-telephone-fill"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"
+          />
+        </svg>
+        <p>+91-8889991736</p>
+        <button id="login">Student Login</button>
+      </div>
+    </header>
+
+    <main>
+      <div class="enquiry-form">
+        <h1>Enquiry Form</h1>
+        <br />
+        <p>
+          Have questions or need assistance? Fill out the form below to connect
+          with our team and explore your opportunities.
+        </p>
+        <br /><br />
+        <form>
+          <div class="row">
+            <div class="field">
+              <label for="name">Person Name*</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Person Name"
+                required
+              />
+            </div>
+
+            <div class="field">
+              <label for="phone">Contact Number*</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="Contact Number"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="field">
+              <label for="email">Email*</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email"
+                required
+              />
+            </div>
+
+            <div class="field">
+              <label for="qualification">Qualification*</label>
+              <input
+                type="text"
+                id="qualification"
+                name="qualification"
+                placeholder="Qualification"
+              />
+            </div>
+          </div>
+
+          <div class="field full">
+            <label for="college">College/School Name*</label>
+            <input
+              type="text"
+              id="college"
+              name="college"
+              placeholder="College/School Name"
+            />
+          </div>
+
+          <div class="row">
+            <div class="field">
+              <label for="year">Year*</label>
+              <select id="year" name="year">
+                <option>Year</option>
+                <option>First Year</option>
+                <option>Second Year</option>
+                <option>Third Year</option>
+                <option>Fourth Year</option>
+                <option>Passout</option>
+                <option>Other</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="branch">Branch*</label>
+              <input
+                type="text"
+                id="branch"
+                name="branch"
+                placeholder="Branch"
+              />
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="field">
+              <label>Interested in Which Course</label>
+
+              <div class="checkbox-group">
+                <label
+                  ><input type="checkbox" /> Full Stack Web Development -
+                  Placement Oriented</label
+                >
+                <label
+                  ><input type="checkbox" /> Data Science with Python -
+                  Placement Oriented</label
+                >
+                <label
+                  ><input type="checkbox" /> Data Analytics with Python -
+                  Placement Oriented</label
+                >
+                <label><input type="checkbox" /> Business Analyst</label>
+                <label><input type="checkbox" /> Java Programming</label>
+                <label><input type="checkbox" /> Python Programming</label>
+                <label><input type="checkbox" /> C/C++ Programming</label>
+                <label><input type="checkbox" /> Other</label>
+              </div>
+            </div>
+
+            <div class="field">
+              <label>Source of Information</label>
+              <p class="note">
+                <b>
+                  (Only choose 'Received call from institute' if you actually
+                  got a call from us)</b
+                >
+              </p>
+
+              <select>
+                <option>Source of Information</option>
+                <option>Received call from institute</option>
+                <option>Workshop/Seminar</option>
+                <option>NewsPaper/Print Media</option>
+                <option>Social Media</option>
+                <option>Friend/Relative</option>
+                <option>Other</option>
+              </select>
+
+              <label class="mt">Name of Executive*</label>
+              <select>
+                <option>Name of Executive</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="center">
+            <button type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-col">
+          <h3>
+            <img
+              src="./logo.jpeg"
+              alt="Logo"
+              class="logo"
+            />
+          </h3>
+          <p class="footer-text">
+            RICR is a subsidiary of Raj Digital Private Limited. It is a premier
+            coding and robotics institute, empowering students with cutting-edge
+            education and real-world skills for a tech-driven future.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <ul>
+            <li>Courses</li>
+            <li>Host a Workshop</li>
+            <li>Community Ambassador</li>
+            <li>Work With Us</li>
+            <li>Contact Us</li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Other Links</h3>
+          <ul>
+            <li>Edunest Facility</li>
+          </ul>
+          <br />
+          <hr />
+          <br />
+          <h3>Policies</h3>
+          <br />
+          <ul>
+            <li>Privacy Policy</li>
+            <li>Terms of service</li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Contact</h3>
+          <p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-envelope"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"
+              />
+            </svg>
+            contact@ricr.in
+          </p>
+          <p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-telephone-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"
+              />
+            </svg>
+            +91 8889991736
+          </p>
+          <br />
+          <p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-geo-alt"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"
+              />
+              <path
+                d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"
+              />
+            </svg>
+            India
+          </p>
+        </div>
+      </div>
+
+      <div id="footer-bottom">
+        <p align ="left" >© 2024 - Raj Digital Private Limited | All Rights Reserved</p> 
+      </div>
+    </footer>
+  </body>
+</html>

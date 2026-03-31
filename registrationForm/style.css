@@ -1,0 +1,139 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#body {
+  background-color: lightgreen;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#outerDiv {
+  height: 680px;
+  display: grid;
+  margin: 0 auto;
+  /* background-color: red; */
+  grid-template-columns: auto auto auto;
+  justify-items: center;
+  align-items: flex-end;
+}
+
+.innerDiv1 {
+  width: 450px;
+  height: 500px;
+  background-color: white;
+  border-radius: 10px;
+  margin: 70px 100px;
+  display: grid;
+  align-items: center;
+}
+.innerDiv2 {
+  width: 450px;
+  height: 600px;
+  background-color: white;
+  border-radius: 10px;
+  margin: 70px 100px;
+  display: grid;
+  align-items: center;
+}
+
+.login span {
+  text-decoration: underline;
+  text-decoration-color: blue;
+}
+
+.login {
+  /* border: none; */
+  font-size: xx-large;
+  /* margin: 0 20px; */
+  margin-left: 50px;
+  margin-top: 20px;
+  }
+
+.textDiv {
+  display: flex;
+  align-items: flex-end;
+  font-size: medium;
+  margin: 0 20px;
+  border-bottom: 1px solid gray;
+  width: 350px;
+  margin-left: 50px;
+}
+
+#button {
+  border: none;
+}
+
+#butt{
+  height: 50px;
+  width: 100vh;
+  background-color: #476cfc;
+  border-radius: 5px;
+  color: white;
+  font-size: large;
+  border: none;
+}
+
+input::placeholder{
+  color: gray;
+    font: 1.1rem sans-serif;
+}
+
+input{
+  height: 20px;
+  padding: 10px;
+}
+
+#border{
+  border: none;
+}
+
+
+.link{
+  margin-left: 3px;
+  color: blue;
+}
+
+.textSpace{
+  display: flex;
+
+}
+
+svg{
+  color: gray;
+  height: 45px;
+  width: 22px;
+}
+
+.eyeMove{
+  color: grey;
+  margin-bottom: -6px;
+  margin-left: 110px;
+}
+
+
+#lastLine{
+  color: gray;
+  margin-left: 90px;
+  margin-bottom: 30px;
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+}
+
+#remember{ 
+  color: gray;
+  font-size: medium;
+  margin-left: 10px;
+}
+
+#forgotPass{
+  font-size: medium;
+  margin-left: 70px;
+}

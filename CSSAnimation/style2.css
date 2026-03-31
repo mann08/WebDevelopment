@@ -1,0 +1,43 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+@keyframes Mann 
+{
+    0%{
+        top: 0px;
+        left: 0px;
+        background-color: rgb(239, 85, 85);
+    }
+    25%{
+        top: 0px;
+        left: 500px;
+        background-color: lightblue;
+    }
+    50%{
+        top: 500px;
+        left: 500px;
+        background-color: lightgreen;
+    }
+    75%{
+        top: 500px;
+        left: 0px;
+        background-color: lightyellow;      
+    }
+    100%{
+        top: 0px;
+        left: 0px;
+        background-color: rgb(239, 85, 85);
+
+    }
+ 
+}
+#box
+{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    position: absolute;
+    animation: Mann 5s linear infinite;
+}
