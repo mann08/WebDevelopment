@@ -1,0 +1,30 @@
+:root {
+  --main-color: rgb(77, 240, 153);
+  --text-color: rgb(236, 126, 126);
+  --sub-color: rgb(169, 96, 242);
+}
+button {
+  background-color: var(--main-color);
+}
+button[type="button"] {
+  background-color: var(--sub-color);
+}
+h1 {
+  color: var(--text-color);
+}
+h3 {
+  color: var(--sub-color);
+}
+p {
+  color: var(--text-color);
+}
+table {
+  border: 1px solid black;
+  padding: 0px;
+}
+th {
+  color: var(--main-color);
+}
+td {
+  color: var(--sub-color);
+}
