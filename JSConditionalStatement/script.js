@@ -48,10 +48,46 @@ console.log(a > 3 || b < 5);
 let data;
 let name = "Mann";
 
-data = name|| "N/A";
+data = name || "N/A";
 // if (name) {
 //   data = name;
 // } else {
 //   data = "N/A";
 // }
 console.log(data);
+
+let x = 8;
+console.log(x > 10 && y < 5);
+
+for (let i = 1; i <= 5; i++) {
+  if (i === 3) {
+    continue;
+  }
+  console.log(i);
+}
+
+for (let i = 1; i <= 5; i++) {
+  if (i === 3) {
+    break;
+  }
+  console.log(i);
+}
+
+let choice = 1;
+switch (choice) {
+  case 1: {
+    console.log("Tea");
+    break;
+  }
+  case 2: {
+    console.log("Coffee");
+    break;
+  }
+  case 3: {
+    console.log("Lassi");
+    break;
+  }
+  default: {
+    console.log("Pani");
+  }
+}
