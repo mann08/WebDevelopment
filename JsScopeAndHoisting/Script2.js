@@ -21,3 +21,7 @@ abc();
 function abc() {
     console.log("This is a function");
 }
+
+function submit() {
+    console.log("Submit button clicked");
+}
