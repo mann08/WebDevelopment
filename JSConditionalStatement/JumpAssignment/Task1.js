@@ -1,0 +1,1 @@
+console.log("Jump Statements in JavaScript are used to alter the control flow of a program. They include 'break', 'continue', and 'return' statements.");
