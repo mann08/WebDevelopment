@@ -1,0 +1,1 @@
+console.log("When the condition in the if statement falses, the code inside the else block will be executed. The else statement provides an alternative path of execution when the specified condition is not met. It allows developers to handle different scenarios and ensure that certain code is executed when specific conditions are not satisfied.");
