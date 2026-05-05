@@ -18,5 +18,18 @@ arr.pop();
 console.log(arr);
 arr.unshift(1);
 console.log(arr);
-arrshift();
+arr.shift(1);
 console.log(arr);
+
+console.log(arr.at(5));
+
+console.log(arr.indexOf(8));
+
+console.log(arr.includes(16));
+
+let unar = [56,23,89,45,67,34,12,90,87,45,98]
+console.log(unar);
+console.log(unar.sort());
+console.log(unar);
+console.log(unar.reverse());
+
