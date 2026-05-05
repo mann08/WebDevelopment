@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Form Card</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="Form.css">
+</head>
+
+<body>
+
+<div class="main-container">
+  <div class="form-card">
+    <h2>User Information Form</h2>
+
+    <div class="form-group">
+      <label>Name</label>
+      <input type="text" id="name" placeholder="Enter your name">
+    </div>
+
+    <div class="form-group">
+      <label>City</label>
+      <input type="text" id="city" placeholder="Enter your city">
+    </div>
+
+    <div class="form-group">
+      <label>Email</label>
+      <input type="email" id="email" placeholder="Enter your email">
+    </div>
+
+    <div class="form-group">
+      <label>Password</label>
+      <input type="password" id="password" placeholder="Enter your password">
+    </div>
+
+    <button onclick="submitData()">Submit</button>
+
+    <div id="output"></div>
+  </div>
+</div>
+
+<script src="Form.js"></script>
+
+</body>
+</html>
