@@ -87,3 +87,21 @@ let ab = "This is a web development course";
 console.log(ab);
 console.log(ab.split(" "));
 console.log(ab.split(" - "));
+
+
+let str = "this is a string";
+console.log(str.charAt(5));
+
+console.log(str.toUpperCase());
+console.log(str.toLowerCase());
+
+let a = 3.14;
+console.log(a);
+console.log(a.charAt(1));
+console.log(typeof a);
+let b = a.toString();
+console.log(b);
+console.log(b.charAt(2));
+
+let c = 3.14;
+console.log(c.toFixed(3));
