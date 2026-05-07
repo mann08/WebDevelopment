@@ -14,3 +14,16 @@ function Success(){
 function Secondary(){
     document.getElementById("bulb1").style.backgroundColor = "blue";
 }
+
+document.getElementById("warning").addEventListener("click", warning());
+document.getElementById("Success").addEventListener("click", Success());
+document.getElementById("Secondary").addEventListener("click", Secondary());
+
+document
+.getElementById("bulb1Color")
+.addEventListener("change", ChangeBulbColor);
+
+function ChangeBulbColor(){
+   const color = document.getElementById("bulb1Color").value;
+    document.getElementById("bulb1").style.backgroundColor = color;
+}
