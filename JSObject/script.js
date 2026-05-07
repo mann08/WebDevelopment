@@ -105,3 +105,6 @@ console.log(b.charAt(2));
 
 let c = 3.14;
 console.log(c.toFixed(3));
+
+let fullname = "Mann Verma";
+console.log(`My name is ${fullname}`);
