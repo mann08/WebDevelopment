@@ -1,0 +1,32 @@
+body {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  min-height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card {
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.form-control:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.15);
+}
+
+#totalDisplay {
+  font-weight: 800;
+}
+
+.list-group-item {
+  background: transparent;
+  padding: 12px 0;
+  font-size: 1.1rem;
+}
+
+.invalid-feedback {
+  font-weight: 500;
+}

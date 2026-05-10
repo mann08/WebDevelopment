@@ -1,0 +1,44 @@
+:root {
+  --primary-green: #2ecc71;
+  --dark-slate: #2c3e50;
+  --light-bg: #f8f9fa;
+}
+
+body {
+  background-color: #ecf0f1;
+  font-family: "Segoe UI", Roboto, sans-serif;
+}
+
+.calculator-card {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.btn-calculate {
+  background-color: var(--primary-green);
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.btn-calculate:hover {
+  background-color: #27ae60;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(46, 204, 113, 0.4);
+}
+
+.result-card {
+  border-top: 5px solid var(--primary-green);
+}
+
+.slab-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.total-highlight {
+  color: var(--primary-green);
+  font-weight: bold;
+}
