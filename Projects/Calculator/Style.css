@@ -11,18 +11,7 @@ body {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  background:
-    radial-gradient(
-      circle at 10% 75%,
-      rgba(255, 190, 150, 0.55),
-      transparent 22%
-    ),
-    radial-gradient(
-      circle at 85% 80%,
-      rgba(73, 126, 230, 0.45),
-      transparent 28%
-    ),
-    linear-gradient(120deg, #f8d8df 0%, #dce4ff 42%, #7cabf5 100%);
+  background: url(./CalculatorBGImage.png)
 }
 
 .page-shell {
@@ -33,7 +22,7 @@ body {
 }
 
 .calculator-card {
-  background: #d9e3fb;
+  background: #c9d6f5;
   border-radius: 38px;
   padding: 10px;
   box-shadow: 0 18px 45px rgba(62, 78, 130, 0.22);
@@ -51,6 +40,7 @@ body {
   padding: 22px;
   font-size: 26px;
   color: #111;
+  text-align: right;
 }
 
 .calculator-keypad {
@@ -117,4 +107,9 @@ body {
   .key-equal {
     width: 135px;
   }
+}
+
+label{
+    width: 100%;
+    text-align: center;
 }

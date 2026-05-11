@@ -7,39 +7,62 @@
     <link rel="stylesheet" href="Style.css" />
   </head>
   <body>
-
     <div class="page-shell">
       <div class="calculator-card">
-        <div class="calculator-screen" id="display">
-            <label for="Text" class="fs-2 border">0</label>
-        </div>
+        <div class="calculator-screen" id="display">0</div>
 
         <div class="calculator-keypad">
-          <button class="key" id="clear">AC</button>
-          <button class="key" id="cancel">C</button>
-          <button class="key" data-value="%">%</button>
-          <button class="key key-operator" data-value="/">/</button>
+          <button class="key" id="clear" onclick="Calculate('AC')">AC</button>
+          <button class="key" id="cancel" onclick="Calculate('C')">C</button>
+          <button class="key" data-value="%" onclick="Calculate('%')">%</button>
+          <button
+            class="key key-operator"
+            data-value="/"
+            onclick="Calculate('/')"
+          >
+            /
+          </button>
 
-          <button class="key" data-value="7">7</button>
-          <button class="key" data-value="8">8</button>
-          <button class="key" data-value="9">9</button>
-          <button class="key key-operator" data-value="*">*</button>
+          <button class="key" data-value="7" onclick="Calculate('7')">7</button>
+          <button class="key" data-value="8" onclick="Calculate('8')">8</button>
+          <button class="key" data-value="9" onclick="Calculate('9')">9</button>
+          <button
+            class="key key-operator"
+            data-value="*"
+            onclick="Calculate('*')"
+          >
+            *
+          </button>
 
-          <button class="key" data-value="4">4</button>
-          <button class="key" data-value="5">5</button>
-          <button class="key" data-value="6">6</button>
-          <button class="key key-operator" data-value="-">-</button>
+          <button class="key" data-value="4" onclick="Calculate('4')">4</button>
+          <button class="key" data-value="5" onclick="Calculate('5')">5</button>
+          <button class="key" data-value="6" onclick="Calculate('6')">6</button>
+          <button
+            class="key key-operator"
+            data-value="-"
+            onclick="Calculate('-')"
+          >
+            -
+          </button>
 
-          <button class="key" data-value="1">1</button>
-          <button class="key" data-value="2">2</button>
-          <button class="key" data-value="3">3</button>
-          <button class="key key-operator" data-value="+">+</button>
+          <button class="key" data-value="1" onclick="Calculate('1')">1</button>
+          <button class="key" data-value="2" onclick="Calculate('2')">2</button>
+          <button class="key" data-value="3" onclick="Calculate('3')">3</button>
+          <button
+            class="key key-operator"
+            data-value="+"
+            onclick="Calculate('+')"
+          >
+            +
+          </button>
 
-          <button class="key" data-value="0">0</button>
-          <button class="key" data-value=".">.</button>
-          <button class="key key-equal" id="equal">=</button>
+          <button class="key" data-value="0" onclick="Calculate('0')">0</button>
+          <button class="key" data-value="." onclick="Calculate('.')">.</button>
+          <button class="key key-equal" id="equal" onclick="Calculate('=')">
+            =
+          </button>
         </div>
-    </div>
+      </div>
     </div>
 
     <script src="Script.js"></script>
