@@ -1,18 +1,53 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <input type="text" id="fullName" placeholder="Enter Your Name">
-    <input type="text" id="phone" placeholder="Enter Your Phone Number">
-    <input type="text" id="email" placeholder="Enter Your Email">
-    <input type="password" id="password" placeholder="Enter Your Password">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <style>
+      .error {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="fw-bold d-flex justify-content-center bg-primary-subtle">Made Byy Mann</h1>
+    <div class="d-flex gap-3 p-3 border border-1 rounded shadow-lg bg-danger">
+      <div>
+        <input type="text" id="fullName" placeholder="Enter Your Name" />
+        <span id="nameError" class="error"></span>
+      </div>
+      <div>
+        <input type="text" id="phone" placeholder="Enter Your Phone Number" />
+        <span id="phoneError" class="error"></span>
+      </div>
+      <div>
+        <input type="text" id="email" placeholder="Enter Your Email" />
+        <span id="emailError" class="error"></span>
+      </div>
+      <div>
+        <input
+          type="password"
+          id="password"
+          placeholder="Enter Your Password"
+          required
+        />
+        <span id="passwordError"></span>
+      </div>
+      <button onclick="submit()">Submit</button>
+    </div>
 
-    <button onclick="submit()">Submit</button>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
     <script src="Script.js"></script>
-</body>
+  </body>
 </html>

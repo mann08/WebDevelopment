@@ -1,16 +1,26 @@
 function submit() {
-  let fullName = document.getElementById("fullName").value;
-  let phone = document.getElementById("phone").value;
-  let email = document.getElementById("email").value;
-  let password = document.getElementById("password").value;
+  const fn = document.getElementById("fullName").value;
+  const em = document.getElementById("email").value;
+  const ph = document.getElementById("phone").value;
 
-  console.log("Name :", fullName);
-  console.log("Phone :", phone);
-  console.log("Email :", email);
-  console.log("Password :", password);
+  if (!/^[A-Za-z\s]+$/.test(fn)) {
+    document.getElementById("nameError").innerText = "Invalid Full Name";
+  }
 
-  document.getElementById("fullName").value = "";
-  document.getElementById("phone").value = "";
-  document.getElementById("email").value = "";
-  document.getElementById("password").value = "";
+  if (!/^[A-Za-z\.\_\d]+@gmail.com$/.test(em)) {
+    document.getElementById("emailError").innerText = "Invalid Email";
+  }
+
+  if (!/^[6-9]\d{9}$/.test(ph)) {
+    document.getElementById("phoneError").innerText = "Invalid Phone";
+  }
+ else {
+    console.log("Name :", fullName);
+    console.log("Phone :", phone);
+    console.log("Email :", email);
+    console.log("Password :", password);
+  }
 }
+  document.querySelectorAll(".error").forEach((element) => {
+    element.innerText = "";
+  });
