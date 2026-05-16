@@ -1,28 +1,30 @@
 function getDataFromLocalStorage() {
-  const data = JSON.parse(localStorage.getItem("Password")) || [];
+  const data = JSON.parse(localStorage.getItem("Passwords")) || [];
 
   const ShowData = document.getElementById("passwordData");
 
   console.log(data);
 
   if (data.length <= 0) {
-    ShowDataDiv.innerHTML = `<tr> <td colspan = "3"> 
-        No Password Saved </td></tr>`;
+    ShowData.innerHTML = `<tr>
+                <td colspan="3">
+                    No Password saved
+                </td>
+            </tr>`;
     return;
   }
 
-  data.forEach( (element) => {
+  data.forEach((element) => {
     const TR = document.createElement("tr");
 
-
     TR.innerHTML = `
-    <td>${element.WebsiteName}</td>
-    <td>${element.UserName}</td>
-    <td>${element.Password}</td>`
+              <td>${element.WebsiteName}</td>
+              <td>${element.UserName}</td>
+              <td>${element.Password}</td>
+            `;
 
-    ShowDataDiv.appendChild(TR)
+    ShowData.appendChild(TR);
   });
-
 }
 
 getDataFromLocalStorage();
