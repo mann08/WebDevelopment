@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #dbeafe, #eff6ff, #f8fafc);
+  color: #172554;
+}
+
+header {
+  background: linear-gradient(135deg, #2563eb, #0ea5e9);
+  color: white;
+  padding: 12px;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(37, 99, 235, 0.25);
+}
+
+header h3 {
+  font-size: 25px;
+  font-weight: 800;
+  margin: 0;
+}
+
+main {
+  padding: 55px 15px;
+}
+
+.weather-card {
+  max-width: 720px;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.88);
+  border-radius: 28px;
+  padding: 32px;
+  box-shadow: 0 25px 60px rgba(37, 99, 235, 0.18);
+  border: 1px solid rgba(147, 197, 253, 0.6);
+}
+
+.weather-card h2 {
+  text-align: center;
+  font-weight: 800;
+  color: #1d4ed8;
+  margin-bottom: 25px;
+}
+
+.search-box {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 15px;
+}
+
+.search-box input {
+  flex: 1;
+  height: 52px;
+  border-radius: 16px;
+  border: 1px solid #bfdbfe;
+  padding: 0 18px;
+  outline: none;
+  font-size: 16px;
+}
+
+.search-box button {
+  width: 58px;
+  border: none;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #2563eb, #0ea5e9);
+  color: white;
+  font-size: 22px;
+  transition: 0.3s;
+}
+
+.search-box button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(37, 99, 235, 0.35);
+}
+
+#errorMsg {
+  color: #dc2626;
+  text-align: center;
+  font-weight: 600;
+}
+
+.main-weather {
+  text-align: center;
+  padding: 18px 0 25px;
+}
+
+.main-weather img {
+  width: 110px;
+}
+
+.main-weather h1 {
+  font-size: 55px;
+  font-weight: 900;
+  color: #f97316;
+}
+
+.main-weather h4 {
+  font-size: 26px;
+  font-weight: 800;
+  color: #1d4ed8;
+}
+
+.main-weather p {
+  font-size: 18px;
+  color: #475569;
+  text-transform: capitalize;
+}
+
+.details {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+
+.box {
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  border-radius: 20px;
+  padding: 18px 10px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.box:hover {
+  transform: translateY(-5px);
+  background: #dbeafe;
+}
+
+.box i {
+  font-size: 28px;
+  color: #2563eb;
+}
+
+.box span {
+  display: block;
+  font-size: 13px;
+  color: #64748b;
+  margin: 8px 0 4px;
+}
+
+.box b {
+  font-size: 16px;
+  color: #0f172a;
+}
+
+@media (max-width: 768px) {
+  .details {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .weather-card {
+    padding: 24px;
+  }
+
+  .main-weather h1 {
+    font-size: 45px;
+  }
+}
