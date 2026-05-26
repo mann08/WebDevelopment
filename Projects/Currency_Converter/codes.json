@@ -1,0 +1,86 @@
+[
+  {
+    "Country": "United States",
+    "Currency": "United States Dollar",
+    "Currency_Code": "usd",
+    "Country_Code": "US"
+  },
+  {
+    "Country": "India",
+    "Currency": "Indian Rupee",
+    "Currency_Code": "inr",
+    "Country_Code": "IN"
+  },
+  {
+    "Country": "Euro Area",
+    "Currency": "Euro",
+    "Currency_Code": "eur",
+    "Country_Code": "EU"
+  },
+  {
+    "Country": "United Kingdom",
+    "Currency": "Pound Sterling",
+    "Currency_Code": "gbp",
+    "Country_Code": "GB"
+  },
+  {
+    "Country": "Japan",
+    "Currency": "Japanese Yen",
+    "Currency_Code": "jpy",
+    "Country_Code": "JP"
+  },
+  {
+    "Country": "Australia",
+    "Currency": "Australian Dollar",
+    "Currency_Code": "aud",
+    "Country_Code": "AU"
+  },
+  {
+    "Country": "Canada",
+    "Currency": "Canadian Dollar",
+    "Currency_Code": "cad",
+    "Country_Code": "CA"
+  },
+  {
+    "Country": "China",
+    "Currency": "Chinese Yuan",
+    "Currency_Code": "cny",
+    "Country_Code": "CN"
+  },
+  {
+    "Country": "Singapore",
+    "Currency": "Singapore Dollar",
+    "Currency_Code": "sgd",
+    "Country_Code": "SG"
+  },
+  {
+    "Country": "United Arab Emirates",
+    "Currency": "UAE Dirham",
+    "Currency_Code": "aed",
+    "Country_Code": "AE"
+  },
+  {
+    "Country": "Saudi Arabia",
+    "Currency": "Saudi Riyal",
+    "Currency_Code": "sar",
+    "Country_Code": "SA"
+  },
+  {
+    "Country": "Switzerland",
+    "Currency": "Swiss Franc",
+    "Currency_Code": "chf",
+    "Country_Code": "CH"
+  },
+  {
+    "Country": "New Zealand",
+    "Currency": "New Zealand Dollar",
+    "Currency_Code": "nzd",
+    "Country_Code": "NZ"
+  },
+  {
+    "Country": "South Africa",
+    "Currency": "South African Rand",
+    "Currency_Code": "zar",
+    "Country_Code": "ZA"
+  }
+]
