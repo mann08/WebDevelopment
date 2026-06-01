@@ -1,7 +1,19 @@
 function Header() {
   return (
     <>
-      <div id="Header">This is Header</div>
+      <div className="bg-bg-primary-subtle p-2 d-flex justify-content-between align-items-center">
+        <div className=" text-primary fs-4 fw-bold">My Company </div>
+        <div className="d-flex gap-4">
+          <span>Home</span>
+          <span>About</span>
+          <span>Products</span>
+          <span>ConatactUS</span>
+        </div>
+        <div className="d-flex gap-3">
+          <button className="btn btn-outline-primary">Login</button>
+          <button className="btn btn-primary">Register</button>
+        </div>
+      </div>
     </>
   );
 }
