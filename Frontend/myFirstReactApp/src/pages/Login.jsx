@@ -33,7 +33,7 @@ function Login() {
               onChange={(e) => setPassword(e.target.value)}
             />
             <br />
-            <div className=" float-end">
+            <div className=" text-end">
               <button type=" submit" className=" btn btn-primary">
                 Login
               </button>
