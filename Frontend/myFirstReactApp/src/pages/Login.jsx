@@ -39,7 +39,7 @@ function Login() {
               </button>
             </div>
           </form>
-          <hr/>
+          <hr />
           <p>
             Already have an account? <Link to="/register">Register</Link>
           </p>
