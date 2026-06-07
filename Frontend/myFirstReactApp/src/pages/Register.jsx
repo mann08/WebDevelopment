@@ -15,8 +15,7 @@ function Register() {
     console.log("phoneNumber :", phoneNumber);
     console.log("password :", password);
     console.log("confirmPassword :", confirmPassword);
-  }
-
+  };
 
   return (
     <>
@@ -46,7 +45,7 @@ function Register() {
               onChange={(e) => setEmail(e.target.value)}
             />
             <br />
-             <label htmlFor="phoneNumber">Phone Number</label>
+            <label htmlFor="phoneNumber">Phone Number</label>
             <input
               type="tel"
               name="phoneNumber"
@@ -56,7 +55,7 @@ function Register() {
               onChange={(e) => setPhoneNumber(e.target.value)}
             />
             <br />
-             <label htmlFor="password">Password</label>
+            <label htmlFor="password">Password</label>
             <input
               type="password"
               name="password"
@@ -79,11 +78,11 @@ function Register() {
             <br />
             <div className="text-end">
               <button type="submit" className="btn btn-primary">
-                Register  
+                Register
               </button>
             </div>
           </form>
-            <hr/>
+          <hr />
           <p>
             Already have an account? <Link to="/login">Login</Link>
           </p>

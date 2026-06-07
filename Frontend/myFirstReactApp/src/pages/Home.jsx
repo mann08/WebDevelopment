@@ -15,7 +15,12 @@ function Home() {
           </p>
 
           <div className="d-flex justify-content-center mt-4">
-            <button className="btn btn-primary me-2">Check our Products</button>
+            <button
+              className="btn btn-primary me-2"
+              onClick={() => navigate("./product")}
+            >
+              Check our Products
+            </button>
           </div>
         </div>
       </div>
