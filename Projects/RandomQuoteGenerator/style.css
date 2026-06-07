@@ -12,7 +12,9 @@ body {
   background: #f4f4f4;
   font-family: Arial, sans-serif;
 }
-
+.title{
+  color: #57b0f0;  
+}
 .container {
   background: white;
   padding: 30px;
