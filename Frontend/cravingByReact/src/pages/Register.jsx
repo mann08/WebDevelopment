@@ -1,5 +1,4 @@
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 function Register() {
@@ -11,6 +10,7 @@ function Register() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
     console.log("fullName :", fullName);
     console.log("email :", email);
     console.log("phoneNumber :", phoneNumber);
@@ -19,94 +19,109 @@ function Register() {
   };
 
   return (
-    <>
-      <div className="container h-100 d-flex position-relative align-items-center mt-4">
-        <div className="row w-100 justify-content-end pe-lg-4">
-          <div className="col-md-5 col-lg-5">
-            <div className="login-card d-flex flex-column gap-2 px-5 py-4 rounded-3 bg-light">
-              <h2 className="cardheader fw-bold text-center mb-1">
-                Create Account
-              </h2>
+    <div className="min-h-screen flex items-center justify-center bg-gray-100 px-4 py-8">
+      <div className="w-full max-w-md">
+        <form
+          onSubmit={handleSubmit}
+          className="bg-white rounded-xl shadow-lg p-8 flex flex-col gap-4"
+        >
+          <h2 className="text-3xl font-bold text-center">Create Account</h2>
 
-              <p className="text-center text-muted mb-3">
-                Join us as a Customer, Restaurant, or Rider
-              </p>
+          <p className="text-center text-gray-500">
+            Join us as a Customer, Restaurant, or Rider
+          </p>
 
-              <label className="form-label fw-medium">Register as:</label>
+          <div>
+            <label className="block font-medium mb-2">Register as:</label>
 
-              <div className="d-flex gap-3 mb-2">
-                <div>
-                  <input type="radio" name="role" defaultChecked /> Customer
-                </div>
-                <div>
-                  <input type="radio" name="role" /> Restaurant
-                </div>
-                <div>
-                  <input type="radio" name="role" /> Rider
-                </div>
-              </div>
+            <div className="flex flex-wrap gap-4">
+              <label className="flex items-center gap-2 cursor-pointer">
+                <input type="radio" name="role" defaultChecked />
+                <span>Customer</span>
+              </label>
 
-              <input
-                type="text"
-                className="form-control custom-input mb-2 py-2"
-                placeholder="Enter your full name"
-              />
+              <label className="flex items-center gap-2 cursor-pointer">
+                <input type="radio" name="role" />
+                <span>Restaurant</span>
+              </label>
 
-              <input
-                type="email"
-                className="form-control custom-input mb-2 py-2"
-                placeholder="Enter your email"
-              />
-
-              <input
-                type="text"
-                className="form-control custom-input mb-2 py-2"
-                placeholder="Enter your phone number"
-              />
-
-              <input
-                type="password"
-                className="form-control custom-input mb-2 py-2"
-                placeholder="Enter your password"
-              />
-
-              <input
-                type="password"
-                className="form-control custom-input mb-2 py-2"
-                placeholder="Confirm your password"
-              />
-
-              <div className="d-flex align-items-center gap-2 mb-2 small">
-                <input type="checkbox" />
-                <span>
-                  I agree to the{" "}
-                  <a href="#" className="text-main text-decoration-none">
-                    terms and conditions
-                  </a>
-                </span>
-              </div>
-
-              <button className="btn-register-login w-100 py-3 mb-2 fw-bold">
-                Register
-              </button>
-
-              <p className="text-center mb-1 fs-6">
-                <span className="opacity-75 fw-lighter">
-                  Already registered?
-                </span>{" "}
-                <Link
-                  to="/login"
-                  id="link"
-                  className="fw-semibold text-main opacity-100"
-                >
-                  Login here
-                </Link>
-              </p>
+              <label className="flex items-center gap-2 cursor-pointer">
+                <input type="radio" name="role" />
+                <span>Rider</span>
+              </label>
             </div>
           </div>
-        </div>
+
+          <input
+            type="text"
+            value={fullName}
+            onChange={(e) => setFullName(e.target.value)}
+            placeholder="Enter your full name"
+            className="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"
+          />
+
+          <input
+            type="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            placeholder="Enter your email"
+            className="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"
+          />
+
+          <input
+            type="text"
+            value={phoneNumber}
+            onChange={(e) => setPhoneNumber(e.target.value)}
+            placeholder="Enter your phone number"
+            className="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"
+          />
+
+          <input
+            type="password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            placeholder="Enter your password"
+            className="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"
+          />
+
+          <input
+            type="password"
+            value={confirmPassword}
+            onChange={(e) => setConfirmPassword(e.target.value)}
+            placeholder="Confirm your password"
+            className="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"
+          />
+
+          <label className="flex items-start gap-2 text-sm">
+            <input type="checkbox" className="mt-1" />
+            <span>
+              I agree to the{" "}
+              <a href="#" className="text-orange-500 hover:text-orange-600">
+                terms and conditions
+              </a>
+            </span>
+          </label>
+
+          <button
+            type="submit"
+            className="w-full py-3 bg-orange-500 text-white font-semibold rounded-lg hover:bg-orange-600 transition"
+          >
+            Register
+          </button>
+
+          <p className="text-center text-sm">
+            <span className="text-gray-500">Already registered?</span>{" "}
+            <Link
+              to="/login"
+              className="font-semibold text-orange-500 hover:text-orange-600"
+            >
+              Login here
+            </Link>
+          </p>
+        </form>
       </div>
-    </>
+    </div>
   );
 }
+
 export default Register;

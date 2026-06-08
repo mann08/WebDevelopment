@@ -1,5 +1,4 @@
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 function Login() {
@@ -12,80 +11,84 @@ function Login() {
     console.log("userName :", userName);
     console.log("password :", password);
   };
+
   return (
-    <>
-      <div className="container h-100 d-flex position-relative align-items-center mt-4">
-        <div className="row w-100 justify-content-start pe-lg-4">
-          <div className="col-md-5 col-lg-5">
-            <div className="login-card d-flex flex-column gap-2 px-5 py-4 rounded-3 bg-light">
-              <h2 className=" cardheader fw-bold text-center mb-1">
-                Welcome Back
-              </h2>
+    <div className="min-h-screen flex items-center justify-center px-4 py-8 bg-gray-100">
+      <div className="w-full max-w-md">
+        <form
+          onSubmit={handleSubmit}
+          className="flex flex-col gap-3 p-8 rounded-xl bg-white shadow-lg"
+        >
+          <h2 className="text-3xl font-bold text-center">Welcome Back</h2>
 
-              <p className="text-center text-muted mb-3">
-                Login to your Cravings account
-              </p>
+          <p className="text-center text-gray-500 mb-2">
+            Login to your Craving account
+          </p>
 
-              <label className="form-label fw-bold fs-6">Email</label>
+          <label className="font-semibold">Email</label>
 
-              <input
-                type="email"
-                className="form-control custom-input mb-2 py-2"
-                placeholder="Enter your email"
-              />
+          <input
+            type="email"
+            value={userName}
+            onChange={(e) => setUserName(e.target.value)}
+            placeholder="Enter your email"
+            className="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"
+          />
 
-              <label className="form-label fw-bold fs-6">Password</label>
+          <label className="font-semibold">Password</label>
 
-              <div className="position-relative mb-2">
-                <input
-                  type="password"
-                  className="form-control custom-input py-2"
-                  placeholder="Enter your password"
-                />
+          <div className="relative">
+            <input
+              type="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              placeholder="Enter your password"
+              className="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"
+            />
 
-                <span className="position-absolute top-50 end-0 translate-middle-y me-2 text-muted">
-                  <i className="bi bi-eye"></i>
-                </span>
-              </div>
-
-              <div className="d-flex justify-content-between align-items-center mb-2 small">
-                <div>
-                  <input type="checkbox" /> Remember
-                </div>
-
-                <a href="#" className="text-decoration-none text-main small">
-                  Forgot password?
-                </a>
-              </div>
-
-              <button className="btn-register-login w-100 py-3 mb-2 fw-bold">
-                Login
-              </button>
-
-              <div className="d-flex align-items-center mb-2">
-                <hr className="flex-grow-1" />
-
-                <span className="mx-2 fw-lighter text-muted">
-                  Don't have an account?
-                </span>
-
-                <hr className="flex-grow-1" />
-              </div>
-
-              <p className="text-center mb-0 fs-6">
-                <Link
-                  to="/register"
-                  id="link"
-                  className="fw-semibold text-main"
-                >
-                  Create an account
-                </Link>
-              </p>
-            </div>
+            <span className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-500 cursor-pointer">
+              👁️
+            </span>
           </div>
-        </div>
+
+          <div className="flex justify-between items-center text-sm">
+            <label className="flex items-center gap-2">
+              <input type="checkbox" />
+              Remember
+            </label>
+
+            <a href="#" className="text-orange-500 hover:text-orange-600">
+              Forgot password?
+            </a>
+          </div>
+
+          <button
+            type="submit"
+            className="w-full py-3 bg-orange-500 text-white font-semibold rounded-lg hover:bg-orange-600 transition"
+          >
+            Login
+          </button>
+
+          <div className="flex items-center gap-3">
+            <hr className="flex-1" />
+            <span className="text-sm text-gray-500">
+              Don't have an account?
+            </span>
+            <hr className="flex-1" />
+          </div>
+
+          <p className="text-center">
+            <Link
+              to="/register"
+              className="font-semibold text-orange-500 hover:text-orange-600"
+            >
+              Create an account
+            </Link>
+          </p>
+        </form>
       </div>
-    </>
+    </div>
   );
 }
+
 export default Login;
