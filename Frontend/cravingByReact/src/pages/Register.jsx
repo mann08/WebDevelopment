@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import heroImage from "../images/bgImage1-BgVBBcls.jpg";
 
 function Register() {
   const [fullName, setFullName] = useState("");
@@ -19,8 +20,13 @@ function Register() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100 px-4 py-8">
-      <div className="w-full max-w-md">
+    <div
+      className="min-h-screen flex items-center justify-end px-15 py-8 bg-cover bg-center relative"
+      style={{ backgroundImage: `url(${heroImage})` }}
+    >
+      <div className="absolute inset-0 bg-black/50"></div>
+
+      <div className="relative z-10 w-full max-w-md">
         <form
           onSubmit={handleSubmit}
           className="bg-white rounded-xl shadow-lg p-8 flex flex-col gap-4"

@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import heroImage from "../images/bgImage1-BgVBBcls.jpg";
 
 import mangoTree from "../images/undermango tree.avif";
@@ -29,27 +31,46 @@ function Home() {
   return (
     <div className="bg-gray-50">
       <section
-        className="h-[85vh] bg-cover bg-center flex items-center justify-center text-center text-white relative"
+        className="h-[90vh] bg-cover bg-center flex items-center justify-center text-center text-white relative"
         style={{ backgroundImage: `url(${heroImage})` }}
       >
-        <div className="absolute inset-0 bg-black/50"></div>
+        <div className="absolute inset-0 bg-black/60"></div>
 
-        <div className="relative z-10 px-4">
-          <h1 className="text-5xl md:text-7xl font-bold mb-4">
+        <div className="relative z-10 px-4 max-w-5xl">
+          <h1 className="text-5xl md:text-7xl font-bold mb-6">
             Your Favorite Food,
             <br />
             Delivered Fast
           </h1>
 
           <p className="text-lg md:text-2xl mb-8">
-            Order from thousands of restaurants and get it delivered
+            Order from thousands of restaurants and get it delivered to your
+            doorstep.
           </p>
 
-          <div className="max-w-xl mx-auto bg-white rounded-xl p-2">
+          <div className="flex justify-center gap-4 mb-8 flex-wrap">
+            <Link
+              to="/register"
+              className="bg-orange-600 hover:bg-orange-700 text-white font-semibold px-8 py-3 rounded-lg transition"
+            >
+              Sign Up
+            </Link>
+
+            <Link
+              to="/login"
+              className="bg-white text-gray-900 hover:bg-gray-200 font-semibold px-8 py-3 rounded-lg transition"
+            >
+              Order Now
+            </Link>
+          </div>
+
+          <div className="max-w-3xl mx-auto bg-white rounded-xl flex items-center px-4 py-3 shadow-xl">
+            <span className="text-gray-500 text-xl mr-3">🔍</span>
+
             <input
               type="text"
-              placeholder="Search restaurants or dishes"
-              className="w-full outline-none px-4 py-3 text-black"
+              placeholder="Search restaurants or dishes..."
+              className="w-full outline-none text-gray-700"
             />
           </div>
         </div>
@@ -126,6 +147,57 @@ function Home() {
         </div>
       </section>
 
+      <section className="bg-orange-50 py-16">
+        <div className="max-w-6xl mx-auto px-6">
+          <h2 className="text-center text-4xl font-bold mb-12">
+            What Our Customers Say
+          </h2>
+
+          <div className="grid md:grid-cols-3 gap-6">
+            <div className="bg-white p-6 rounded-xl shadow-md">
+              <p className="text-gray-600 mb-4">
+                Amazing service and super fast delivery. Highly recommended.
+              </p>
+              <h4 className="font-bold">Rahul Sharma</h4>
+            </div>
+
+            <div className="bg-white p-6 rounded-xl shadow-md">
+              <p className="text-gray-600 mb-4">
+                Great variety of restaurants and easy ordering experience.
+              </p>
+              <h4 className="font-bold">Priya Patel</h4>
+            </div>
+
+            <div className="bg-white p-6 rounded-xl shadow-md">
+              <p className="text-gray-600 mb-4">
+                Food arrived hot and fresh. Loved the experience.
+              </p>
+              <h4 className="font-bold">Aman Verma</h4>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-white py-20">
+        <div className="max-w-5xl mx-auto text-center px-6">
+          <h2 className="text-4xl font-bold mb-4">Download Our Mobile App</h2>
+
+          <p className="text-gray-600 mb-8">
+            Order food anytime, anywhere with the Cravings mobile app.
+          </p>
+
+          <div className="flex justify-center gap-4 flex-wrap">
+            <button className="bg-black text-white px-8 py-3 rounded-lg">
+              Google Play
+            </button>
+
+            <button className="bg-black text-white px-8 py-3 rounded-lg">
+              App Store
+            </button>
+          </div>
+        </div>
+      </section>
+
       <section className="bg-orange-600 text-white py-20 text-center">
         <h2 className="text-4xl font-bold mb-4">Become a Restaurant Partner</h2>
 
@@ -133,7 +205,7 @@ function Home() {
           Grow your business with Cravings and reach thousands of customers.
         </p>
 
-        <button className="bg-white text-orange-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100">
+        <button className="bg-white text-orange-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100">
           Partner With Us
         </button>
       </section>
