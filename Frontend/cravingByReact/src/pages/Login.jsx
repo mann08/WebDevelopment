@@ -13,7 +13,7 @@ function Login() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center px-4 py-8 bg-gray-100">
+    <div className="min-h-screen flex items-center  justify-start px-18 py-8 bg-gray-100">
       <div className="w-full max-w-md">
         <form
           onSubmit={handleSubmit}
