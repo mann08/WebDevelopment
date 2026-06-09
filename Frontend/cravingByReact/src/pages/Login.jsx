@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import heroImage from "../images/bgImage1-BgVBBcls.jpg";
 
 function Login() {
   const [userName, setUserName] = useState("");
@@ -13,8 +14,13 @@ function Login() {
   };
 
   return (
-    <div className="min-h-screen flex items-center  justify-start px-18 py-8 bg-gray-100">
-      <div className="w-full max-w-md">
+    <div
+      className="min-h-screen flex items-center justify-start px-8 md:px-20 py-8 bg-cover bg-center relative"
+      style={{ backgroundImage: `url(${heroImage})` }}
+    >
+      <div className="absolute inset-0 bg-black/50"></div>
+
+      <div className="relative z-10 w-full max-w-md">
         <form
           onSubmit={handleSubmit}
           className="flex flex-col gap-3 p-8 rounded-xl bg-white shadow-lg"
@@ -64,7 +70,7 @@ function Login() {
 
           <button
             type="submit"
-            className="w-full py-3 bg-orange-500 text-white font-semibold rounded-lg hover:bg-orange-600 transition"
+            className="w-full py-3 bg-orange-700 text-white font-semibold rounded-lg hover:bg-orange-600 transition"
           >
             Login
           </button>

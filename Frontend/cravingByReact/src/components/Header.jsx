@@ -1,24 +1,28 @@
+import { Link } from "react-router-dom";
 import logo from "../images/craveing logo.png";
 
 function Header() {
   return (
-    <header className="flex items-center justify-between px-8 py-4 shadow-md bg-orange-600">
-      <img src={logo} alt="Craving" className="h-12 w-auto object-contain" />
+    <header className=" h-15 flex items-center justify-between px-10 py-4 shadow-md bg-orange-600">
+      <Link to="/">
+        <img
+          src={logo}
+          alt="Craving"
+          className="h-12 w-auto object-contain cursor-pointer"
+        />
+      </Link>
 
       <div className="flex items-center gap-4">
-        <a
-          href="/login"
-          className="text-white font-medium hover:text-orange-500 transition"
-        >
+        <Link to="/login" className="text-white font-medium">
           Login
-        </a>
+        </Link>
 
-        <a
-          href="/register"
-          className="bg-white text-orange-600 px-5 py-2 rounded-lg font-medium hover:bg-orange-600 transition"
+        <Link
+          to="/register"
+          className="bg-white text-orange-600 px-5 py-2 rounded-lg"
         >
           Register
-        </a>
+        </Link>
       </div>
     </header>
   );
