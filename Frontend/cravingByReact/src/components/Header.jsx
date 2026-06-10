@@ -3,7 +3,7 @@ import logo from "../images/craveing logo.png";
 
 function Header() {
   return (
-    <header className=" h-15 flex items-center justify-between px-10 py-4 shadow-md bg-orange-600">
+    <header className=" h-15 flex items-center justify-between px-10 py-4 shadow-md bg-orange-700">
       <Link to="/">
         <img
           src={logo}
