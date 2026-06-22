@@ -13,7 +13,18 @@ app.get("/", (req, res) => {
 app.post("/login", (req, res) => {
   res.json({ message: "Login Succesfull" });
 });
-
+app.post("/logout", (req, res) => {
+  res.json({ message: "Logout Succesfull" });
+});
+app.post("/register", (req, res) => {
+  res.json({ message: "Register Succesfull" });
+});
+app.put("/update", (req, res) => {
+  res.json({ message: "Update Succesfull" });
+});
+app.delete("/delete", (req, res) => {
+  res.json({ message: "Delete Succesfull" });
+});
 const port = process.env.PORT || 5000;
 
 app.listen(port, () => {
