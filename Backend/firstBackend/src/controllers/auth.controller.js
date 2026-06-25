@@ -14,7 +14,28 @@ export const RegisterUser = async (req, res) => {
       return;
     }
     // Create New User and Complete Registration will do this tomorrow
-  } catch (error) {}
+
+    const photoUrl = `https://placehold.co/600x400?text=${fullName.charAt(0).toUpperCase()}`;
+
+    const photo = {
+      url: photoUrl,
+      publicId: null,
+    };
+
+    const newUser = await User.create({
+      fullName,
+      email,
+      phone,
+      gender,
+      password,
+      dob,
+      photo,
+    });
+
+    res.status(201).json({ message: "User Created Successfully" });
+  } catch (error) {
+    res.status(500).json({ message: "Internal Server Error" });
+  }
 };
 
 export const LoginUser = (req, res) => {
