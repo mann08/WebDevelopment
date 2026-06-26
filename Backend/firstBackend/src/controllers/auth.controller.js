@@ -42,7 +42,6 @@ export const RegisterUser = async (req, res, next) => {
 
 export const LoginUser = async (req, res, next) => {
   try {
-    const { email, password } = req.body;
     if (!email || !password) {
       const error = new Error("All Fields are Required");
       error.statusCode = 400;
