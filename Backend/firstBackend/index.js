@@ -24,7 +24,8 @@ app.get("/", (req, res) => {
 app.use((err, req, res, next) => {
  const ErrMessage = err.message || "Internal Server Error";
  const ErrStatusCode = err.statusCode || 500;
-  res.status(ErrStatusCode).json({ message: ErrMessage });
+ 
+ res.status(ErrStatusCode).json({ message: ErrMessage });
 });
 
 const port = process.env.PORT || 5000;

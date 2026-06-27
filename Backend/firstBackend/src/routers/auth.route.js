@@ -9,6 +9,7 @@ import {
   sampleMiddleWare,
   sampleMiddleWare2,
 } from "../middleware/auth.middleware.js";
+
 const router = express.Router();
 
 router.post("/login", sampleMiddleWare, LoginUser);

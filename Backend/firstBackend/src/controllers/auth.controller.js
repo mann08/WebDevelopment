@@ -3,6 +3,7 @@ import User from "../models/user.model.js";
 export const RegisterUser = async (req, res, next) => {
   try {
     const { fullName, email, phone, gender, password, dob } = req.body;
+   
     if (!fullName || !email || !phone || !password || !dob || !gender) {
       const error = new Error("All Fields are Required");
       error.statusCode = 400;
