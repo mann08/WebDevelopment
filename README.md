@@ -45,3 +45,17 @@ Tables
 Forms
 Text formatting
 Input elements
+
+
+CSS3
+CSS selectors
+Box Model
+Display properties
+Flexbox
+CSS Grid
+Responsive design
+CSS variables
+Gradients
+Animations
+Keyframes
+Layout design
