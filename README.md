@@ -59,3 +59,27 @@ Gradients
 Animations
 Keyframes
 Layout design
+
+
+📈 Learning Journey
+HTML5
+   ↓
+CSS3
+   ↓
+Responsive Web Design
+   ↓
+Bootstrap
+   ↓
+JavaScript
+   ↓
+DOM & Events
+   ↓
+API Integration
+   ↓
+React.js
+   ↓
+Node.js
+   ↓
+Express.js
+   ↓
+Full-Stack Development
