@@ -23,7 +23,7 @@ Project Development
 ## 🛠️ Tech Stack
 
 | Technology | Purpose |
-|------------|---------|
+|------------|-----------|
 | HTML5 | Web structure and semantic markup |
 | CSS3 | Styling, layouts, animations, and responsive design |
 | JavaScript | Logic, DOM manipulation, events, and APIs |
