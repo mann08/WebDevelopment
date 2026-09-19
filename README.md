@@ -4,7 +4,7 @@ A comprehensive collection of my Web Development learning journey, assignments, 
 
 ---
 
-## About the Repository
+# About the Repository
 
 This repository documents my hands-on journey in Web Development. It contains structured practice work, assignments, experiments, and projects developed while learning and strengthening my development skills.
 
