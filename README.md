@@ -20,7 +20,7 @@ Git & GitHub
 Project Development
 
 ---
-## 🛠️ Tech Stack
+# 🛠️ Tech Stack
 
 | Technology | Purpose |
 |------------|-----------|
