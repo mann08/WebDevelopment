@@ -35,7 +35,7 @@ Project Development
 | GitHub | Code hosting and collaboration |
 
 
-📚 Topics Covered
+# 📚 Topics Covered
 HTML5
 Basic HTML structure
 Semantic HTML
